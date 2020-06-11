@@ -15,7 +15,9 @@ class Person
   end
 
   class PartnerError < StandardError
-    "you must give the get_married method as an argument of an instance of the Person class!"
+    def message
+      "you must give the get_married method as an argument of an instance of the Person class!"
+    end
   end
 
 end
